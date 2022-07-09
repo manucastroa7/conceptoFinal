@@ -1,0 +1,29 @@
+// nesting
+@import "base/mixin";  
+@import "base/variables"; 
+@import "base/header";
+@import "base/mainIndex";
+@import "base/mainViajesAMedida";
+@import "base/mainContacto";
+@import "base/mainNosotros";
+@import "base/mainGirasDeportivas";
+@import "base/footer";
+@import "base/grid";
+@import "mediaqueries";
+@import "base/extend";
+
+
+* { 
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+

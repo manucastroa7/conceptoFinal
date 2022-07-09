@@ -1,0 +1,18 @@
+@mixin flex ($flex, $content) {
+    display: $flex;
+    justify-content: $content;
+
+}
+
+@mixin animation ($animation, $duration) {
+    animation: $animation;
+    animation-duration: $duration;
+
+}
+
+@mixin subtitulo ($color, $bg, $align, $font) {
+    color: $color;
+    background-color: $bg;
+    text-align: $align;
+    font-family: $font;
+}

@@ -1,0 +1,58 @@
+// GIRAS DEPORTIVAS
+
+main {
+    .tituloGiras {
+        @extend %titulo;
+        @include animation (fadeIn, 2.5s);
+
+    }
+}
+
+.containerDeportes {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: $color-main3;
+    align-items: center;
+    margin: 20px;
+
+    .containerFutbol {
+        width: 50%;
+        margin:10px;
+
+
+
+        img {
+
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        h2 {
+            background-color: $color-main3;
+            text-align: center;
+            color: $color-main2;
+            font-family: $font-family;
+            @include animation (fadeIn, 2.5s);
+        }
+    }
+
+    .containerHockey {
+        width: 50%;
+
+
+        img {
+
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        h2 {
+            background-color: $color-main3;
+            text-align: center;
+            color: $color-main2;
+            font-family: $font-family;
+            @include animation (fadeIn, 2.5s);
+        }
+    }
+
+}

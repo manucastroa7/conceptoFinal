@@ -1,0 +1,38 @@
+footer {
+    @include flex (flex, space-evenly);
+    align-items: center;
+    margin: 0px 0px;
+    background-color: #B22727;
+
+
+    img {
+
+        width: 12%;
+        
+    }
+
+
+
+    .datosContacto {
+        padding: $medida-principal + 10;
+        margin-right: $medida-principal + 30;
+        text-align: right;
+
+        h3 {
+            color: $color-texto;
+            font-size: 1.2rem;
+
+        }
+
+        ul {
+            li {
+                color: $color-texto;
+                font-size: 1rem;
+                list-style-type: none;
+            }
+        }
+    }
+
+
+
+}

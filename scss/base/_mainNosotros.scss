@@ -1,0 +1,59 @@
+main 
+
+{
+
+    background-color: $color-main3;
+
+    .tituloNosotros {
+        @extend %titulo;
+        @include animation (fadeIn, 2.5s);
+        
+    }
+
+
+    .nosotros {
+        @include flex (flex, center);
+        background-color: $color-main3;
+        align-items: center;
+        height: 500px;
+        margin: 20px;
+
+
+        .imagenNosotros {
+            overflow: hidden;
+            width: 70%;
+            height: 500px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+
+                img {
+
+                    object-fit: cover;
+                    transition: 0.5s;
+
+
+
+
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.2rem;
+            margin: 20px;
+            
+        }
+
+    }
+
+
+
+
+}

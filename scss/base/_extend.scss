@@ -1,0 +1,17 @@
+/* EXTEND */
+
+%titulo {
+    color: $color-texto;
+    background-color: $color-main2;
+    text-align: $align;
+    font-family: $font-family;
+}
+
+%btn {
+
+    border-radius: 1rem;
+    margin: $medida-principal + 30;
+    padding: $medida-principal;
+    
+    color: $color-texto;
+}

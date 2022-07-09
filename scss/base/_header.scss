@@ -1,0 +1,65 @@
+header {
+    @include flex (flex, space-evenly);
+    align-items: center;
+    background-color: #9B0000;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+
+
+    .logoHeader {
+
+        width: 15%;
+
+
+        img {
+
+            width: 80%;
+        }
+    }
+
+    nav.navbar {
+        background-color: $color-principalFondo;
+        font-size: large;
+        color: $color-texto;
+
+
+
+
+
+        .nav-item {
+            margin: 2rem;
+        }
+
+        .dropdown-menu {
+            background-color: $color-principalFondo;
+
+            li {
+                .dropdown-item {
+                    color: $color-texto;
+
+                    &:hover {
+                        color: $color-principalFondo;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .redesSociales {
+        display: flex;
+        
+
+        .logoIG {
+            width: 60px;
+        }
+
+        .logoFB {
+
+            width: 60px;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+.tituloFormulario {
+    @extend %titulo;
+    @include animation (fadeIn, 2.5s);
+}
+
+
+.mainFormulario {
+    color:$color-main2;
+    background-color: $color-main3;
+    font-family: $font-family;
+
+    .contenedorFormulario {
+
+        .formulario {
+            margin: 20px 30px 20px 20px;
+            padding: 0px 0px 0px 0px;
+            border: $color-main2 solid 5px;
+            background-color: $color-main3;
+            font-family: $font-family;
+
+            @include animation (fadeIn, 2.5s);
+
+            fieldset {
+                legend {
+                    color: black;
+                    margin: 30px;
+                }
+
+                div {
+                    label {
+                        color: $color-main2;
+                        margin: 20px;
+                        margin-bottom: 20px;
+                        padding: 20px;
+                    }
+                }
+
+                //APLICANDO EXTEND
+                div {
+                    .btnEnviar {
+                        @extend %btn;
+                        background-color: $color-main2;
+
+                    }
+
+                    .btnResetear {
+                        @extend %btn;
+                        background-color: green;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+.ubicacion {
+    padding: 20px;
+    background-color: $color-main3;
+    font-family: $font-family;
+
+    h2 {
+        color: BLACK;
+        margin: 20px;
+        margin-bottom: 10px;
+        @include animation (fadeIn, 2.5s);
+    }
+
+    p {
+        color: $color-main2;
+        margin: 20px;
+        @include animation (fadeIn, 2.5s);
+    }
+
+
+    .imagenUbicacion {
+        img {
+            @include flex (flex, center);
+            @include animation (fadeIn, 2.5s);
+        }
+    }
+}
